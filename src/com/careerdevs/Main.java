@@ -14,13 +14,19 @@ public class Main {
 
     public static int addition(int num) {
         return num +1;
-        System.out.println(addition());
+
 
     }
 
-    public static int search(int[] arr, int item) {
-        return arr.indexOf(item, 0);
-
+    public static int search(int arr[], int item) {
+        int index=-1;
+        for(int i=0; i < arr.length;i++){
+            if(arr[i]==item){
+                index = i;
+                i+=arr.length+1;
+            }
+        }
+        return index;
     }
 
     public static int convert(int minutes) {
