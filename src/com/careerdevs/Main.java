@@ -14,10 +14,22 @@ public class Main {
 
     public static int addition(int num) {
         return num +1;
-        System.out.println(addition);
+        System.out.println(addition());
+
     }
 
-    public static int search(int arr[], int item) {
-        return arr.indexOf(item, 0)
+    public static int search(int[] arr, int item) {
+        return arr.indexOf(item, 0);
+
     }
+
+    public static int convert(int minutes) {
+        return minutes*60;
+    }
+
+    public static String giveMeSomething(String a) {
+        return "something" + " " + a;
+    }
+
+
 }
