@@ -1,14 +1,15 @@
 package com.careerdevs;
 
 import javax.naming.PartialResultException;
+import java.util.Enumeration;
 
 public class Main {
 
     public static void main(String[] args) {
         System.out.println(getFirstElement(new int[] {3,1,4}));
         System.out.println(addition(0));
-        System.out.println(search(new int[] ));
-        System.out.println(convert(new int[] {1, 2, 3}, new int[]));
+        System.out.println(Age(0));
+
     }
     public static int getFirstElement(int[] arr){
         return arr[0];
@@ -36,7 +37,7 @@ public class Main {
     }
 
     public static String giveMeSomething(String a) {
-        return "something" + " " + a;
+        return "something " + a;
     }
 
     //algorithm 6
@@ -53,6 +54,42 @@ public class Main {
     public class Program {
         public static int countWords(String s) {
             return s.split(" ").length;
+        }
+    }
+
+    //algorithm 8
+
+    public class ExistsANumberHigher {
+        public static boolean existsHigher(int[] arr, int n) {
+            if (arr.length == 0) return false;
+            for (int i : arr) {
+                if (i >= n) return true;
+            }
+            return false;
+        }
+    }
+
+    //algorithm 10
+
+    public class SumOfTwoNumbers {
+        public static int sum(int a, int b) {
+            return a + b;
+        }
+    }
+
+    //algorithm 11
+
+    public class Program {
+        public static boolean isSameNum(int x, int y) {
+            return x == y;
+        }
+    }
+
+    //algorithm 12
+
+    public class Age {
+        public static int calcAge(int age) {
+            return age*365;
         }
     }
 
