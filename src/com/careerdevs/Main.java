@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(getFirstElement(new int[] {3,1,4}));
         System.out.println(addition(0));
-        System.out.println(Age(0));
+
 
     }
     public static int getFirstElement(int[] arr){
@@ -92,6 +92,18 @@ public class Main {
             return age*365;
         }
     }
+
+    //algorithm 13
+
+    public class Challenge {
+        public static String helloName(String name) {
+            return "Hello " + name + "!";
+        }
+    }
+
+    //algorithm 14
+
+
 
 
 }
