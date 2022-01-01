@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(getFirstElement(new int[] {3,1,4}));
         System.out.println(addition(0));
-
+        System.out.println(search(new int[]));
 
     }
     public static int getFirstElement(int[] arr){
@@ -103,6 +103,11 @@ public class Main {
 
     //algorithm 14
 
+    public class ReverseOrder {
+        public static String reverse(final String str) {
+            return new StringBuilder(str).reverse().toString();
+        }
+    }
 
 
 
