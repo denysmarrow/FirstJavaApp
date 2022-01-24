@@ -6,9 +6,14 @@ import java.util.Enumeration;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(getFirstElement(new int[] {3,1,4}));
-        System.out.println(addition(0));
-        System.out.println(search(new int[]));
+        addition(6);
+        search();
+        getFirstElement(1,[0]);
+        convert(40);
+        giveMeSomething("else");
+        ChallengeOne challenge1 = new ChallengeOne();
+
+
 
     }
     public static int getFirstElement(int[] arr){
@@ -42,7 +47,7 @@ public class Main {
 
     //algorithm 6
 
-    public class Challenge {
+    public class ChallengeOne {
         public static boolean reverse(boolean b) {
             return !b;
 
